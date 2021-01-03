@@ -12,7 +12,7 @@ module.exports = {
                 // This is the field under which it's accessible
                 fieldName: "Lollies",
                 // URL to query from
-                url: "http://localhost:8888/.netlify/functions/newLolly",
+                url: "https://peaceful-davinci-8bcbf0.netlify.app/.netlify/functions/newLolly",
             },
         },
         `gatsby-plugin-react-helmet`,

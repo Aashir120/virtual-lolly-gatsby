@@ -27,8 +27,8 @@ export default function DynamicLollyPage({ data }) {
       <h5 className="sharableLinkContainer">Your sharable link: </h5>{" "}
       <span className="sharableLink">
         {" "}
-        {`http://localhost:8888/lollies/${data.Lollies.getLollyByPath.lollyPath}`}
-        {console.log(`http://localhost:8888/lollies/${data.Lollies.getLollyByPath.lollyPath}`)}
+        {`https://peaceful-davinci-8bcbf0.netlify.app/lollies/${data.Lollies.getLollyByPath.lollyPath}`}
+        {console.log(`https://peaceful-davinci-8bcbf0.netlify.app/lollies/${data.Lollies.getLollyByPath.lollyPath}`)}
       </span>
       <div className="recievedContentContainer">
         <Lolly
