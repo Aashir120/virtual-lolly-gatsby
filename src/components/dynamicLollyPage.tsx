@@ -28,6 +28,7 @@ export default function DynamicLollyPage({ data }) {
       <span className="sharableLink">
         {" "}
         {`http://localhost:8888/lollies/${data.Lollies.getLollyByPath.lollyPath}`}
+        {console.log(`http://localhost:8888/lollies/${data.Lollies.getLollyByPath.lollyPath}`)}
       </span>
       <div className="recievedContentContainer">
         <Lolly
@@ -39,7 +40,7 @@ export default function DynamicLollyPage({ data }) {
         <div className="recievedTextContainer">
           <h3>HI {data.Lollies.getLollyByPath.recipientName.toUpperCase()}</h3>
           <p>{data.Lollies.getLollyByPath.message}</p>
-          <h4>From: {data.Lollies.getLollyByPath.sendersName}</h4>
+          <h4>From: {data.Lollies.getLollyByPath.senderName}</h4>
         </div>
       </div>
     </div>

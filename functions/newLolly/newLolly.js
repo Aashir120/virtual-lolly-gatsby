@@ -24,12 +24,15 @@ const typeDefs = gql `
     lollyPath:String!
   }
   type Mutation{
-    createLolly( recipientName: String!,
-    message: String!,
-    senderName: String!,
-    flavourTop: String!,
-    flavourMiddle: String!,
-    flavourBottom: String!):Lolly
+    createLolly(
+        recipientName: String!
+        message: String!
+        senderName: String!
+        flavourTop: String!
+        flavourMiddle: String!
+        flavourBottom: String!
+        lollyPath: String!
+        ):Lolly
   }
 `;
 
@@ -76,14 +79,6 @@ const resolvers = {
                     q.Create(q.Collection('lollies'), {
                         data: args
                     }))
-                axios
-                    .post("https://api.netlify.com/build_hooks/5f9b08201c44a833a923d4b4")
-                    .then(function(response) {
-                        console.log(response)
-                    })
-                    .catch(function(error) {
-                        console.error(error)
-                    })
 
                 console.log('result', result)
                 console.log('result', result.data)

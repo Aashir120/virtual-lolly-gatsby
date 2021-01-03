@@ -26,6 +26,7 @@
     "yup": "^0.32.8"
   },
   "devDependencies": {
+    "@types/shortid": "0.0.29",
     "prettier": "2.2.1"
   },
   "keywords": [

@@ -5,19 +5,37 @@ import Lolly from '../components/Lolly';
 
 export default function index() {
     return (
-        <div className="container">
-            <Header/>
-            <div className="listLollies">            
-            <div>
-                <Lolly fillLollyTop="#d52358" fillLollyBottom="#e95946" fillLollyMiddle="#deaa43" />
+        <div>
+            <Header/>         
+            <div className="lolliesContainer">
+        <Lolly style="lollipop" />
+        <Lolly
+          style="lollipop"
+          fillLollyTop="#6b6bde"
+          fillLollyBottom="#4ac383"
+          fillLollyMiddle="#d2ec27"
+        />
+        <Lolly
+          style="lollipop"
+          fillLollyTop="#b71616"
+          fillLollyBottom="#bf10f1"
+          fillLollyMiddle="#10adf1"
+        />
+        <Lolly
+          style="lollipop"
+          fillLollyTop="#ffc107"
+          fillLollyBottom="#00a97e"
+          fillLollyMiddle="#ec398f"
+        />
             </div>
-            <div>
-                <Lolly fillLollyTop="green" fillLollyBottom="blue" fillLollyMiddle="red" />
-            </div>
-            </div>
-            <input type="button" value="Create new lolly" onClick={()=>{
-                navigate('/createNew')
-            }}/>
+            <button
+        className="createLollyButton"
+        onClick={() => {
+          navigate("/createNew")
+        }}
+      >
+        Send a customized lolly to a friend
+      </button>
         </div>
     )
 }

@@ -1,59 +1,236 @@
 body {
     text-align: center;
+    background-color: #272727;
 }
 
-.container {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.headerContainer {
+    margin: 2rem auto;
 }
 
-.listLollies {
+.headerContainer h1 {
+    font-size: 4em;
+    color: white;
+    text-shadow: 10px 10px 10px pink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.headerContainer h3 {
+    font-size: 2em;
+    color: whitesmoke;
+    text-shadow: 5px 5px 5px thistle;
+    margin-bottom: 5rem;
+}
+
+.lolliesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.lollipop {
+    width: 10vmax;
+    height: 20vmax;
+}
+
+.createLollyButton {
+    font-size: 1.5em;
+    background-color: #272727;
+    border-style: solid;
+    border-radius: 20em;
+    border-color: violet;
+    padding: 1rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.createLollyButton:hover {
+    background-color: rgba(240, 47, 159, 0.4);
+}
+
+.createLollyButton:focus {
+    border: none;
+    outline: none;
+}
+
+.LollyCreaterColorContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-.listLollies .lollipop,
-.lollyFormDiv .lollipop {
-    height: 300px;
-}
-
-.lollyFormDiv {
+.editorRoot {
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-.lollyFlavourDiv {
+.colorSelectorContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-.colorPicker {
-    height: 60px;
-    width: 60px;
-    margin-top: -10px;
-    margin-left: -10px;
-    cursor: pointer;
+    align-content: space-around;
+    justify-content: space-around;
+    height: 75%;
+    margin-top: 1rem;
 }
 
 .colorPickerLabel {
-    height: 40px;
-    width: 40px;
-    border-radius: 24px;
-    border: 2px solid #fff;
-    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px;
     overflow: hidden;
-    margin: 30px;
-    box-shadow: 0 0 14px #000;
 }
 
-.lollyFrom {
+.colorPicker {
+    width: 80px;
+    height: 80px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.lollipopEditor {
+    height: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.formContainer {
     display: flex;
     flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    flex-grow: 0.2;
+    border-style: solid;
+    border-color: violet;
+    border-width: 0.8rem;
+}
+
+.formLabel {
+    font-size: 1.4rem;
+    color: white;
+    text-align: left;
+    text-shadow: 3px 4px 4px pink;
+    margin-bottom: 1rem;
+}
+
+.inputText {
+    height: 2rem;
+    margin-bottom: 1rem;
+    border-style: solid;
+    border-color: pink;
+    border-width: 2;
+}
+
+.inputTextBox {
+    margin-bottom: 1rem;
+    border-style: solid;
+    border-color: pink;
+    border-width: 2;
+}
+
+.submitButton {
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    border-radius: 4rem;
+    border-color: pink;
+}
+
+.submitButton:hover {
+    background-color: rgba(240, 47, 159, 0.4);
+}
+
+.formErrors {
+    color: red;
+    text-align: left;
+    margin-bottom: 0.4rem;
+}
+
+.lollyRecieved {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.recievedContentContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-self: center;
+    padding: 1rem;
+}
+
+.recievedTextContainer {
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-grow: 0.4;
+    background-color: rgba(179, 179, 179, 0.1);
+    border-radius: 10rem;
+    box-shadow: 0px 5px 10px pink;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.recievedTextContainer h3 {
+    font-size: 2rem;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-shadow: 5px 10px 5px purple;
+}
+
+.recievedTextContainer p {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.recievedTextContainer h4 {
+    font-size: 1.7rem;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-shadow: 5px 10px 5px purple;
+}
+
+.sharableLink {
+    background-color: white;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    color: black;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.sharableLinkContainer {
+    font-size: 1.1rem;
+    color: white;
+    background-color: grey;
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: -2rem;
+}
+
+.pageNotFound {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    color: white;
+}
+
+.loading {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    color: white;
 }
