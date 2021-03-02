@@ -81,7 +81,7 @@ const resolvers = {
                     }))
 
                 axios
-                    .post("https://api.netlify.com/build_hooks/5ff1a65fdc7e58d3aafeb307")
+                    .post(`http://localhost:8888/lollies/${args.lollyPath}`)
                     .then(function(response) {
                         console.log(response)
                     })
